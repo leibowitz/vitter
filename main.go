@@ -135,8 +135,10 @@ func Vitter(a []int64, n, N int64) []int64 {
 
 func vitter_a(a []int64, n, N, j int64) []int64 {
 	var S, i int64
-	var top, Nreal, V, quot float64
-	top = float64(N - n)
+	var V, quot float64
+	top := float64(N - n)
+	Nreal := float64(N)
+
 
 	for n >= 2 {
 		V = random_double()
